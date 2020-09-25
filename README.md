@@ -19,17 +19,6 @@ wget -P weights https://pjreddie.com/media/files/yolov3.weights
 For Windows:
 You can download the yolov3 weights by clicking [here](https://pjreddie.com/media/files/yolov3.weights) and adding them to the weights folder.
 
-### Using Custom trained weights
-<strong> Learn How To Train Custom YOLOV3 Weights Here: https://www.youtube.com/watch?v=zJDUhGL26iU </strong>
-
-Add your custom weights file to weights folder and your custom .names file into data/labels folder.
-
-Change 'n_classes=80' on line 97 of load_weights.py to 'n_classes=<number of classes in .names file>'.
-
-Change './weights/yolov3.weights' on line 107 of load_weights.py to './weights/<custom weights file>'.
-
-Change './data/labels/coco.names' on line 25 of detection.py to './data/labels/<custom names files>'.
-  
 ### Save the weights in Tensorflow format
 Load the weights using `load_weights.py` script. This will convert the yolov3 weights into TensorFlow .ckpt model files!
 
@@ -72,11 +61,6 @@ The script can also be ran using your laptops webcam as the input. Example comma
 python detect.py webcam 0.5 0.5
 ```
 The detections will be saved as 'detections.mp4' in the data/detections folder.
-
-## To-Do List
-* Finish migration to full TF 2.0 (remove tf.compat.v1)
-* Model training
-* Tiny Yolo Configuration
 
 ## Acknowledgments
 * [Yolo v3 official paper](https://arxiv.org/abs/1804.02767)
