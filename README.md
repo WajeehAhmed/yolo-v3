@@ -49,11 +49,11 @@ detection_2.jpg
 ```
 ![alt text](https://github.com/heartkilla/yolo-v3/blob/master/data/detection_examples/detection_2.jpg)
 ### Video example
-You can also run the script with video files.
+You can also run the script with video files.<br />
 ```
 python detect.py video 0.5 0.5 data/video/shinjuku.mp4
 ```
-The detections will be saved as `detections.mp4` file.
+The detections will be saved as `detections.mp4` file.<br />
 ![alt text](https://github.com/heartkilla/yolo-v3/blob/master/data/detection_examples/detections.gif)
 ### Webcam example
 The script can also be ran using your laptops webcam as the input. Example command shown below.
